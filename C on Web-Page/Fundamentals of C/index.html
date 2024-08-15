@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Language Notes by Vikram</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        p {
+            line-height: 1.6;
+        }
+        code {
+            background-color: #eef;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .example {
+            background-color: #e1f5fe;
+            border-left: 5px solid #03a9f4;
+            padding: 10px;
+            margin: 20px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .highlight {
+            color: #e74c3c;
+        }
+        .advantage {
+            color: #27ae60;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Introduction to C Language</h1>
+
+        <p>C is a <strong>high level</strong> and <strong>middle level programming language</strong> that is compiler-based and procedure-oriented. It is a general-purpose programming language, suitable for system and application software development.</p>
+
+        <h2>What is a Program?</h2>
+        <p>A set of instructions is called a program.</p>
+
+        <h2>What is Software?</h2>
+        <p>A set of programs is called software. Software can be classified into two categories:</p>
+        <ul>
+            <li><strong>System Software</strong>: Examples include operating systems, device drivers, and translators.</li>
+            <li><strong>Application Software</strong>: Examples include apps like WhatsApp, PhonePe, and IRCTC.</li>
+        </ul>
+
+        <h2>What is a Language?</h2>
+        <p>Languages are used to communicate. Human languages like Telugu, English, Hindi, and Marathi are used to communicate with humans, whereas programming languages like C, C++, Java, Python, etc., are used to communicate with machines.</p>
+
+        <h2>Types of Programming Languages</h2>
+        <ul>
+            <li><strong>Machine Language</strong>: Uses binary code (0, 1). Example: <code>11100010</code></li>
+            <li><strong>Low Level/Assembly Language</strong>: Uses mnemonics (shortcuts). Example: <code>gd mrg</code></li>
+            <li><strong>High Level Language</strong>: Uses simple English. Example: <code>good morning</code></li>
+        </ul>
+
+        <div class="example">
+            <h3>Example: Adding Two Numbers in C</h3>
+            <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int a = 5, b = 10, sum;
+    sum = a + b;
+    printf("Sum: %d", sum);
+    return 0;
+}
+            </pre>
+        </div>
+
+        <h2>What is a Translator?</h2>
+        <p>A translator converts high-level code to binary code (machine language). Types of translators:</p>
+        <ul>
+            <li><strong>Compiler</strong>: Converts the entire program into binary code at once, ignoring error lines.</li>
+            <li><strong>Interpreter</strong>: Converts the program line by line.</li>
+            <li><strong>Assembler</strong>: Converts low-level programs into binary code, similar to a compiler.</li>
+        </ul>
+
+        <h2>Programming Paradigms</h2>
+        <p>Every programming language follows a specific programming structure called a paradigm.</p>
+
+        <h3>Procedure-Oriented Programming (POP)</h3>
+        <p>In POP, a big program is divided into smaller sub-programs, also known as procedures, functions, or modules.</p>
+        <ul>
+            <li class="advantage"><strong>Advantages of POP:</strong></li>
+            <ul>
+                <li>Modularity: Divides a big program into small modules.</li>
+                <li>Simplicity: Easy to read and understand.</li>
+                <li>Reusability: Write once, use many times.</li>
+                <li>Efficiency: High performance.</li>
+            </ul>
+            <li class="highlight"><strong>Disadvantages of POP:</strong></li>
+            <ul>
+                <li>Data is public and can be accessed from anywhere, leading to security issues.</li>
+            </ul>
+        </ul>
+
+        <h2>Object-Oriented Programming (OOP)</h2>
+        <p>OOP is a programming paradigm based on the concept of objects and classes. It is used in languages like C++, Python, Java, and .NET.</p>
+        <ul>
+            <li><strong>Class:</strong> A blueprint to create objects.</li>
+            <li><strong>Object:</strong> An instance of a class.</li>
+            <li><strong>Inheritance:</strong> Mechanism of basing a new class on an existing class.</li>
+            <li><strong>Polymorphism:</strong> Ability to process objects differently based on their data type or class.</li>
+            <li><strong>Abstraction:</strong> Simplification of complex reality by modeling classes appropriate to the problem.</li>
+        </ul>
+
+        <h2>Why C is a General Purpose Language?</h2>
+        <p>C is used to develop various types of software, including:</p>
+        <ul>
+            <li>Operating Systems (e.g., Windows, Linux, macOS)</li>
+            <li>Editors (e.g., Notepad, MS Word)</li>
+            <li>Translators (e.g., Compiler, Interpreter)</li>
+            <li>Commercial Applications (e.g., Hotel management software)</li>
+            <li>Databases (e.g., Oracle, SQL Server)</li>
+            <li>Device Drivers (e.g., Printer drivers)</li>
+            <li>Embedded Applications</li>
+            <li>Games</li>
+            <li>Media Players (e.g., VLC, Windows Media Player)</li>
+            <li>Antivirus Software (e.g., Avast, McAfee)</li>
+            <li>Browsers (e.g., Chrome, Firefox)</li>
+            <li>Standalone Applications</li>
+        </ul>
+
+        <h1>Fundamentals of C</h1>
+
+        <h2>C Character Set</h2>
+        <p>C uses the ASCII character set, which consists of 256 characters. The character set includes alphabets, digits, operators, and separators.</p>
+        <table>
+            <tr>
+                <th>Character</th>
+                <th>ASCII Value</th>
+            </tr>
+            <tr>
+                <td>a-z</td>
+                <td>97-122</td>
+            </tr>
+            <tr>
+                <td>A-Z</td>
+                <td>65-90</td>
+            </tr>
+            <tr>
+                <td>0-9</td>
+                <td>48-57</td>
+            </tr>
+            <tr>
+                <td>Space</td>
+                <td>32</td>
+            </tr>
+        </table>
+
+        <h2>C Tokens</h2>
+        <p>Tokens are the smallest individual elements in a C program. They include keywords, identifiers, constants, strings, and operators.</p>
+
+        <h2>Data Types</h2>
+        <p>Data types define the type of data that can be stored in a variable. C provides the following data types:</p>
+        <ul>
+            <li><strong>Primitive Data Types:</strong> int, float, char</li>
+            <li><strong>Derived Data Types:</strong> array, pointer, function</li>
+            <li><strong>User-Defined Data Types:</strong> structure, union, enum</li>
+        </ul>
+
+        <h3>Example: Integer Data Type</h3>
+        <pre>
+int num = 10; // Declares an integer variable 'num' and initializes it with 10
+        </pre>
+
+        <h2>Operators</h2>
+        <p>Operators are symbols that perform operations on variables and values. C includes several types of operators:</p>
+        <ul>
+            <li><strong>Arithmetic Operators:</strong> +, -, *, /, %</li>
+            <li><strong>Relational Operators:</strong> ==, !=, >, <, >=, <=</li>
+            <li><strong>Logical Operators:</strong> &&, ||, !</li>
+            <li><strong>Assignment Operators:</strong> =, +=, -=, *=, /=</li>
+            <li><strong>Increment/Decrement Operators:</strong> ++, --</li>
+            <li><strong>Conditional (Ternary) Operator:</strong> ? :</li>
+        </ul>
+
+        <h2>Control Flow Statements</h2>
+        <p>Control flow statements control the flow of execution in a program. They include:</p>
+        <ul>
+            <li><strong>If Statement:</strong> Executes a block of code if a condition is true.</li>
+            <li><strong>Switch Statement:</strong> Allows multi-way branching based on the value of a variable.</li>
+            <li><strong>Loops:</strong> <code>for</code>, <code>while</code>, and <code>do-while</code> loops for repetitive execution.</li>
+        </ul>
+
+        <h2>Example: If Statement</h2>
+        <pre>
+int a = 5;
+if (a > 0) {
+    printf("Positive number");
+}
+        </pre>
+
+        <h2>Functions</h2>
+        <p>Functions are blocks of code that perform specific tasks. They can be called from other functions and are essential for modular programming.</p>
+
+        <h3>Example: Function Declaration and Definition</h3>
+        <pre>
+#include &lt;stdio.h&gt;
+
+void greet() {
+    printf("Hello, World!");
+}
+
+int main() {
+    greet(); // Call the function
+    return 0;
+}
+        </pre>
+
+        <h2>File Handling</h2>
+        <p>C provides functions to handle files, including opening, reading, writing, and closing files.</p>
+
+        <h3>Example: File Operations</h3>
+        <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    FILE *file;
+    file = fopen("example.txt", "w"); // Open file for writing
+    if (file == NULL) {
+        printf("Error opening file!");
+        return 1;
+    }
+    fprintf(file, "Hello, File!"); // Write to file
+    fclose(file); // Close file
+    return 0;
+}
+        </pre>
+
+        <h2>Conclusion</h2>
+        <p>C is a powerful language that has significantly influenced many other programming languages. Its simplicity and efficiency make it a great choice for system and application development.</p>
+    </div>
+</body>
+</html>
