@@ -1,4 +1,5 @@
-// Program to take a value from the user as input all sides of a triangle and check whether the triangle is valid or not. Using if-else.
+// Program to take a value from the user as input all sides of a triangle and 
+// check whether the triangle is valid or not. Using if-else.
 
 
 
